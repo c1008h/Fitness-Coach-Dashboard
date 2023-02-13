@@ -6,8 +6,6 @@ import {
   RefineSnackbarProvider,
   CssBaseline,
   GlobalStyles,
-  ThemeProvider,
-  LightTheme,
   ReadyPage,
   ErrorComponent,
 } from "@pankod/refine-mui";
@@ -16,6 +14,7 @@ import dataProvider from "@pankod/refine-simple-rest";
 import { MuiInferencer } from "@pankod/refine-inferencer/mui";
 import routerProvider from "@pankod/refine-react-router-v6";
 import axios, { AxiosRequestConfig } from "axios";
+import { ColorModeContextProvider } from "contexts";
 import { Title, Sider, Layout, Header } from "components/layout";
 import { Login } from "pages/login";
 import { CredentialResponse } from "interfaces/google";
@@ -88,7 +87,7 @@ function App() {
   };
 
   return (
-    <ThemeProvider theme={LightTheme}>
+    <ColorModeContextProvider>
       <CssBaseline />
       <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
       <RefineSnackbarProvider>
@@ -116,7 +115,7 @@ function App() {
           LoginPage={Login}
         />
       </RefineSnackbarProvider>
-    </ThemeProvider>
+    </ColorModeContextProvider>
   );
 }
 
