@@ -1,12 +1,11 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-mongoose.set('strictQuery', false);
+const connectDB = (url) => {
+  mongoose.set('strictQuery', true);
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/fitness-coach-dashboard', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  // useCreateIndex: true,
-  // useFindAndModify: false,
-});
+  mongoose.connect(url)
+  .then(() => console.log('MongoDB connected!'))
+  .catch((error) => console.log(error))
+}
 
-module.exports = mongoose.connection;
+export default connectDB

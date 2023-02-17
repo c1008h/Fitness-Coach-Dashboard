@@ -1,8 +1,10 @@
-import React from 'react'
+import { Card, Box } from '@pankod/refine-mui'
 
 const ClientDailyCard = () => {
   return (
-    <div>ClientDailyCard</div>
+    <Box>
+      <Card></Card>
+    </Box>
   )
 }
 

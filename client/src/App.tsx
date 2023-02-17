@@ -1,4 +1,3 @@
-import React from "react";
 import { Refine } from "@pankod/refine-core";
 import {
   notificationProvider,
@@ -12,6 +11,7 @@ import {
 import {
   AccountCircleOutlined, ChatBubbleOutline, PeopleAltOutlined, StarOutlineRounded, VillaOutlined
 } from '@mui/icons-material'
+import axios, { InternalAxiosRequestConfig } from "axios";
 import dataProvider from "@pankod/refine-simple-rest";
 import { MuiInferencer } from "@pankod/refine-inferencer/mui";
 import routerProvider from "@pankod/refine-react-router-v6";
@@ -19,6 +19,18 @@ import { ColorModeContextProvider } from "contexts";
 import { Title, Sider, Layout, Header } from "components/layout";
 import { authProvider } from "./authProvider";
 import { Login, Home, Clients, ClientDetail, CreateClient, EditClient, Urgent, MyProfile } from 'pages'
+
+const axiosInstance = axios.create();
+
+axiosInstance.interceptors.request.use((request: InternalAxiosRequestConfig<any>) => {
+    const token = localStorage.getItem("token");
+    if (request.headers) {
+        request.headers["Authorization"] = `Bearer ${token}`;
+    } 
+
+    request.headers["Authorization"] = `Bearer ${token}`;
+    return request;
+});
 
 function App() {
   return (
@@ -40,11 +52,6 @@ function App() {
               edit: EditClient,
               icon:<PeopleAltOutlined/>,
             },
-            // {
-            //   name: "trainer",
-            //   options: { label: 'Trainer'},
-            //   list: MuiInferencer,
-            // },
             {
               name: "urgent",
               options: { label: 'Urgent'},
