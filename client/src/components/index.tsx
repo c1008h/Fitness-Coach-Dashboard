@@ -22,5 +22,5 @@ export {
     CustomButton,
     Form,
     Profile,
-    NewClients
+    NewClients,
 };

@@ -40,6 +40,11 @@ function App() {
               edit: EditClient,
               icon:<PeopleAltOutlined/>,
             },
+            // {
+            //   name: "trainer",
+            //   options: { label: 'Trainer'},
+            //   list: MuiInferencer,
+            // },
             {
               name: "urgent",
               options: { label: 'Urgent'},
@@ -47,14 +52,14 @@ function App() {
               icon: <StarOutlineRounded />
             },
             {
-              name: "message",
+              name: "messages",
               list: MuiInferencer,
               icon: <ChatBubbleOutline />
             },
             {
               name: "my-profile",
               options: { label: 'My Profile'},
-              list: MuiInferencer,
+              list: MyProfile,
               icon: <AccountCircleOutlined />
             },
 

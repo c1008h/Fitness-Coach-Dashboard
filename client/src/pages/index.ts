@@ -6,6 +6,7 @@ import Home from './home'
 import { Login } from './login'
 import MyProfile from "./myprofile";
 import Urgent from './urgent'
+import Trainer from './trainers'
 
 export {
     ClientDetail,
@@ -15,5 +16,6 @@ export {
     Home,
     Login,
     MyProfile,
-    Urgent
+    Urgent,
+    Trainer
 };
