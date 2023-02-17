@@ -1,0 +1,26 @@
+{
+  "name": "fitness-coach-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js --ignore client",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c1008h/Fitness-Coach-Dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c1008h/Fitness-Coach-Dashboard/issues"
+  },
+  "homepage": "https://github.com/c1008h/Fitness-Coach-Dashboard#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

@@ -1,0 +1,37 @@
+
+{
+    "clients": [
+        {
+            "firstname": "Aaron",
+            "lastname": "Ama",
+            "phonenumber": "2234543",
+            "email": "client1@gmail.com",
+            "weight":"140lb",
+            "weightgoal":"125",
+            "workout-plan": [
+                "warm up with push ups", 
+                "bench press",
+                "shoulder press",
+                "cable fly",
+                "incline bench press",
+                "cardio"
+            ]
+        },
+        {
+            "firstname": "Britney",
+            "lastname": "Spears",
+            "phonenumber": "2234543",
+            "email": "client1@gmail.com",
+            "weight":"140lb",
+            "weightgoal":"125",
+            "workout-plan": [
+                "warm up with push ups", 
+                "bench press",
+                "shoulder press",
+                "cable fly",
+                "incline bench press",
+                "cardio"
+            ]
+        }
+    ]
+}
