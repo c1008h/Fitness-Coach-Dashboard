@@ -66,7 +66,8 @@ function App() {
             {
               name: "my-profile",
               options: { label: 'My Profile'},
-              list: MyProfile,
+              show: MyProfile,
+              edit: MyProfile,
               icon: <AccountCircleOutlined />
             },
 

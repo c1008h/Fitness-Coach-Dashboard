@@ -2,10 +2,17 @@ export interface iClient {
     firstname: string;
     lastname: string;
     phonenumber: string;
+    birthday: string;
+    sex: string;
     email: string;
     weight:string;
-    weightgoal: string;
+    height: string;
+    goalType: string;
+    goaltime: string;
+    workoutDays: string;
+    calorieGoal: string;
     workoutplan: [string];
+    clientImage: string;
 }
 
 export interface clientPost {

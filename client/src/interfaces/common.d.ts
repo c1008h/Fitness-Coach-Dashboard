@@ -11,21 +11,13 @@ export interface CustomButtonProps {
 
 export interface ProfileProps {
     type: string;
-    name: string;
+    firstname: string;
+    lastname: string;
     avatar: string;
     email: string;
-    properties: Array | undefined;
+    phonenumber: string;
+    client: Array | undefined;
 }
-
-// export interface PropertyProps {
-//     _id: string;
-//     title: string;
-//     description: string;
-//     location: string;
-//     price: string;
-//     photo: string;
-//     creator: string;
-// }
 
 export interface FormProps {
     type: string;

@@ -15,7 +15,8 @@
                 "cable fly",
                 "incline bench press",
                 "cardio"
-            ]
+            ],
+            "clientImage": ""
         },
         {
             "firstname": "Britney",
@@ -31,7 +32,9 @@
                 "cable fly",
                 "incline bench press",
                 "cardio"
-            ]
+            ],
+            "clientImage": ""
+
         }
     ]
 }
